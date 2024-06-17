@@ -35,4 +35,6 @@ Open the HTML file that has been given and run the file using Live Server
 - hardware from project 1
 
 ### Hardware Setup
-1. 
+
+![image](https://github.com/JacintaSyilloam/FP-insys/assets/121095246/422dba1f-384c-4003-8350-8fa9b5e1c708)
+
