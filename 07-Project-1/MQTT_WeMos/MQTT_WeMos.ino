@@ -10,7 +10,7 @@
 const char* ssid = "Gabriella11";
 const char* pswd = "gabriella1188";
 
-const char* mqtt_server = "198.148.113.137"; //Broker IP/URL
+const char* mqtt_server = "167.172.87.186"; //Broker IP/URL
 const char* topic = "/gabjac/room/temperature";    //Topic
 const char* username="gabjac";
 const char* password="temp123";
@@ -105,7 +105,7 @@ void reconnect() {
     clientId += String(micros() & 0xff, 16); // to randomise. sort of
 
     // Attempt to connect
-    if (client.connect(clientId.c_str(),username,password)) {
+    if (client.connect(clientId.c_str())) {
       Serial.println("connected");
       String subscription;
       subscription += topic;
