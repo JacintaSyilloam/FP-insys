@@ -17,6 +17,7 @@
 1. Connect the ESP32s Wi-Fi to our laptop to confugure the settings using Arduino IDE
    
 2. Connect all hardware using the breadboard
+
 | DHT11 pins | ESP32s pins |
 | ---------- | ----------- |
 | GND        | GND         |
