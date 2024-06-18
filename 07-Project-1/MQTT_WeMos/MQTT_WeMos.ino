@@ -1,9 +1,11 @@
 #include <Adafruit_Sensor.h>
 #include <DHT.h>
 #include <DHT_U.h>
-#include <ESP8266WiFi.h>
+// #include <ESP8266WiFi.h>
+#include <WiFi.h>
 #include <PubSubClient.h>
 
+#define BUILTIN_LED 21
 
 // Update these with values suitable for your network.
 
@@ -12,8 +14,8 @@ const char* pswd = "gabriella1188";
 
 const char* mqtt_server = "167.172.87.186"; //Broker IP/URL
 const char* topic = "/gabjac/room/temperature";    //Topic
-const char* username="gabjac";
-const char* password="temp123";
+//const char* username="afzal";
+//const char* password="temp123";
 
 long timeBetweenMessages = 1000 * 20 * 1;
 
@@ -26,11 +28,11 @@ int status = WL_IDLE_STATUS;     // the starting Wifi radio's status
 
 
 
-#define DHTPIN 5     // Digital pin connected to the DHT sensor 
+#define DHTPIN 19    // Digital pin connected to the DHT sensor 
 
 // Uncomment the type of sensor in use:
 #define DHTTYPE    DHT11     // DHT 11
-//#define DHTTYPE    DHT22     // DHT 22 (AM2302)
+// #define DHTTYPE    DHT22     // DHT 22 (AM2302)
 
 
 
